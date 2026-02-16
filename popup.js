@@ -122,10 +122,11 @@ async function runAutomationLoop(answerArray) {
                     break;
                 }
             }
-            await sleep(300); // Give page time to load next question
+            await sleep(200); // Give page time to load next question
         }
     }
 
     // No alert - automation completes silently
     console.log("✅ Automation complete! Timers are running at accelerated speed.");
 }
+
