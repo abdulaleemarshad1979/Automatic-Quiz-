@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 320px; padding: 15px; font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: white; }
+    h2 { font-size: 18px; margin-bottom: 10px; color: #4CAF50; }
+    textarea { width: 100%; height: 120px; background: #333; color: #fff; border: 1px solid #444; border-radius: 5px; padding: 8px; box-sizing: border-box; font-size: 12px; }
+    .controls { margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
+    button { padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+    #startBtn { background: #4CAF50; color: white; }
+    #startBtn:hover { background: #45a049; }
+    .info { font-size: 11px; color: #aaa; margin-top: 10px; line-height: 1.4; }
+    #status { font-weight: bold; color: #ffd700; margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Quiz Automator</h2>
+  <p class="info">Paste your 20 answers below (One per line):</p>
+  <textarea id="answerList" placeholder="Example:&#10;Paris&#10;42&#10;Oxygen"></textarea>
+  
+  <div class="controls">
+    <button id="startBtn">▶ START AUTOMATION (20 Qs)</button>
+  </div>
+  <div id="status">Status: Idle</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
